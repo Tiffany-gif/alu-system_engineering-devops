@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Connects to a server using a private key
 
-ssh -i ~/.ssh/school ubuntu@3.87.236.224
+ssh 6802ea543906.c66578f8.alu-cod.online -i ~/.ssh/school
 
