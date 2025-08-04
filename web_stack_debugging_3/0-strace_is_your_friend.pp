@@ -5,10 +5,10 @@ exec{ 'fix-wordpress':
   command => "sed -i 's/phpp/php/g' ${file}",
   path    => ['/bin', '/usr/bin'],
   onlyif  => "grep -q phpp ${file}",
-  notify  => Service['nginx'],
+  notify  => Service['apache2'],
 }
 
-service { 'nginx':
+service { 'apache2':
   ensure => running,
   enable => true,
 }
